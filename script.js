@@ -73,7 +73,7 @@ async function call_api(lat, long){
 
     address = data.display_name.split(" ")[0];
 
-    let fetch_url = `http://api.weatherapi.com/v1/current.json?key=679c3ad87fd140a7b45163730252807&q=${address}&aqi=yes`;
+    let fetch_url = `https://api.weatherapi.com/v1/current.json?key=679c3ad87fd140a7b45163730252807&q=${address}&aqi=yes`;
 
     let result = await fetch(fetch_url);
     let weather_data = await result.json();
@@ -118,7 +118,7 @@ async function search_function() {
     
     let address = input_value.value;
 
-    let fetch_url = `http://api.weatherapi.com/v1/current.json?key=679c3ad87fd140a7b45163730252807&q=${address}&aqi=yes`;
+    let fetch_url = `https://api.weatherapi.com/v1/current.json?key=679c3ad87fd140a7b45163730252807&q=${address}&aqi=yes`;
 
     let data = await fetch(fetch_url);
 
@@ -136,7 +136,7 @@ async function your_weather_function() {
     search_weather_container.style.display = "none";
     loading_container.style.display = "flex";
 
-    let fetch_url = `http://api.weatherapi.com/v1/current.json?key=679c3ad87fd140a7b45163730252807&q=${address}&aqi=yes`;
+    let fetch_url = `https://api.weatherapi.com/v1/current.json?key=679c3ad87fd140a7b45163730252807&q=${address}&aqi=yes`;
 
     let data = await fetch(fetch_url);
 
@@ -222,3 +222,4 @@ const countries = {
   "United States": "US",
   "Vietnam": "VN"
 };
+
