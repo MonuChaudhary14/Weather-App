@@ -14,3 +14,5 @@ Features:
 🎨 Modern UI – Gradient background and mobile-friendly layout.
 
 This project focuses on a user-friendly interface and can easily integrate with weather APIs for real-time data.
+
+** Sometimes, the API take much time to fetch the user location, so please be patient and if the problem still continues, then try it with localhost
