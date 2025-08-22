@@ -18,8 +18,6 @@ let address;
 
 const API_key = "679c3ad87fd140a7b45163730252807";
 
-// http://api.weatherapi.com/v1/current.json?key=679c3ad87fd140a7b45163730252807&q=Pahasu&aqi=yes
-
 initial();
 
 
@@ -111,7 +109,7 @@ async function search_function() {
     
     let address = input_value.value;
 
-    let fetch_url = `http://api.weatherapi.com/v1/current.json?key=679c3ad87fd140a7b45163730252807&q=${address}&aqi=yes`;
+    let fetch_url = `https://api.weatherapi.com/v1/current.json?key=679c3ad87fd140a7b45163730252807&q=${address}&aqi=yes`;
 
     let data = await fetch(fetch_url);
 
@@ -129,7 +127,7 @@ async function your_weather_function() {
     search_weather_container.style.display = "none";
     loading_container.style.display = "flex";
 
-    let fetch_url = `http://api.weatherapi.com/v1/current.json?key=679c3ad87fd140a7b45163730252807&q=${address}&aqi=yes`;
+    let fetch_url = `https://api.weatherapi.com/v1/current.json?key=679c3ad87fd140a7b45163730252807&q=${address}&aqi=yes`;
 
     let data = await fetch(fetch_url);
 
@@ -141,4 +139,5 @@ async function your_weather_function() {
 }
 
 your_location_button.addEventListener('click', your_weather_function);
+
 
