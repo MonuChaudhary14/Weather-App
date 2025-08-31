@@ -19,8 +19,6 @@ let address;
 let lat;
 let long;
 
-const API_key = "f6f3b0a1014558c112e25df31fe27a24";
-
 initial();
 
 
@@ -144,3 +142,4 @@ async function your_weather_function() {
 }
 
 your_location_button.addEventListener('click', your_weather_function);
+
